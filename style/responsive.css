@@ -1,0 +1,26 @@
+@media screen and (max-width: 700px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+    .box-filme{
+        min-height: 80vh;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+@media screen and (min-width:1000px){
+    .descricao, #mais{
+        width: 50% !important;
+    }
+}
+#mais{
+    display: none;
+}

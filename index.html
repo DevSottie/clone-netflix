@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/main.css">
+
+    <!--=============OWL CSS===============-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <!--=============RESPONSIVIDADE===============-->
+    <link rel="stylesheet" href="style/responsive.css">
+
     <title>NETFLIX CLONE</title>
 </head>
 <body>
@@ -22,13 +30,17 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">Vikings</h3>
-                <p class="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p>
+                <div id="descricaoPai">
+                    <p id="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, <span id="pontos">...</span><span id="mais"> que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p></span>
+                </div>
 
                 <div class="botoes">
                     <button role="button" class="botao">
+                        <i class="fas fa-play"></i>
                         Assistir Agora
                     </button>
                     <button role="button" class="botao">
+                        <i class="fas fa-info-circle"></i>
                         Mais Informações
                     </button>
                 </div>
@@ -36,5 +48,42 @@
             
         </div>
     </main>
+    <div class="carrosel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme"src="resources/img/capa-aranhaverso.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-bighero.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-enolaholmes.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-herois.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-mulan-cortada.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-novosmutantes.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-soul-cortada.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-vikings.jpg" alt="Miniatura da midia">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="resources/img/capa-ww84.jpg" alt="Miniatura da midia">
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/1c79977c84.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/owl-setup.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
